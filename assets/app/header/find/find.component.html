@@ -1,0 +1,17 @@
+<div class="search-pane">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="search">
+        <div class="search__input-box">
+              <input type="text" class="search__input" id="term" name ="term" ngModel placeholder="search people">
+              <button class="search__button" type="submit">
+                      <img src="/img/musica-searcher.png" class="search__icon">
+              </button>
+        </div>
+    </form>
+    <div class="search-results">
+        <app-profile [profile]="profile" [userId]="userId"
+         *ngFor="let profile of profiles">
+            </app-profile>
+    </div>
+  </div>
+
+ 

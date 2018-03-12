@@ -1,0 +1,38 @@
+<div class="post">
+    <div class="post-content">
+       <figcaption class="review__user">
+               <img src="/img/user-2.jpg" alt="User 1" class="review__photo">
+               <div class="review__user-box">
+                   <p class="review__user-name">{{post.uname}}</p>
+                   <p class="review__user-date">{{post.uinfo}}</p>
+                   <div class="review__user-date">{{post.postcreated | timeAgo}}</div>
+               </div>
+             <!--  <div class="review__rating">9.3</div>-->
+       </figcaption>
+       <h5 class="post__type">{{post.type}}</h5>
+       <h3 class="post__title">{{post.title}}</h3>
+       <p class="post__text">{{post.text}} </p>
+    <!--<img src="/img/hotel-1.jpg" alt="" class="post__img">-->
+   </div>
+   <div class="post__actions">
+    <div class="post__tool">
+           <span>{{post.postlikes}}</span> 
+           <button class="post__tool-btn tool-tip" (click)="post.liked ? postunLike(post): postLike(post)">
+            <img  *ngIf="!post.liked" class="post__tool--img" src="/img/like.svg" alt="">
+            <img *ngIf="post.liked" class="post__tool--img" src="/img/like-fill.svg" alt=""> 
+            <span *ngIf="!post.liked" class="tool-tiptext">Like</span>
+            <span *ngIf="post.liked" class="tool-tiptext">Un Like</span>
+         </button>
+    </div>
+    <div class="post__tool">
+           <span>{{post.postintrests}}</span>
+           <button class="post__tool-btn tool-tip" (click)="post.intrested ? postunInterest(post):postInterest(post)">
+            <img  *ngIf="!post.intrested" class="post__tool--img" src="/img/email.svg" alt="">
+            <img *ngIf="post.intrested" class="post__tool--img" src="/img/email-fill.svg" alt=""> 
+            <span *ngIf="!post.intrested" class="tool-tiptext">Interested</span>
+            <span *ngIf="post.intrested" class="tool-tiptext">Not Interested</span>
+         </button>
+
+    </div>
+</div>
+</div>

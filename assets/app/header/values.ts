@@ -1,0 +1,125 @@
+
+export class Values{
+    public Intrests:any=[
+        "Cooking",
+        "Embroidery",
+        "Teaching",
+        "Accounting",
+        "Handicrafts",
+        "Tailoring",
+        "Painting",
+        "Dancing",
+        "Animal Care",
+        "Volunteer Work",
+        "Community work",
+        "Gardening",
+        "Photography",
+        "Martial arts",
+        "Fashion",
+        "Candle making",
+        "Flower arranging",
+        "Jewelry making",
+        "Making Crafts",
+        "Knitting",
+        "Making Crafts",
+        "Writing",
+        "Cake decorating",
+        "Patchwork",
+        "quilting",
+        "Singing",
+        "Making earrings",
+        "Ballroom Dancing",
+        "Blogging","Drawing",
+        "Public Speaking",
+        "Video-making",
+        "Food Styling",
+        "Gardening",
+        "Flower Arrangement",
+        "Aromatherapy",
+        "Collecting antiques",
+        "Other"
+    ]
+    public Status:any = [
+         "Single",
+         "Married",
+         "divorce",
+         "widow"
+      ];
+      public Languages:any = [
+        "Assamese",
+        "Bengali",
+        "Bhojpuri",
+        "BishnupriyaManipuri",
+        "Gujarati",
+        "Hindi",
+        "Kannada",
+        "Kashmiri",
+        "Konkani",
+        "Maithili",
+        "Malayalam",
+        "Marathi",
+        "Nepali",
+        "Newari",
+        "Odia",
+        "Pali",
+        "Punjabi",
+        "Sanskrit",
+        "Sindhi",
+        "Tamil",
+        "Telugu",
+        "Tulu",
+        "Urdu"
+      ];
+      public Qualifications:any = [
+        "Masters",
+        "Bacholers",
+        "Matriculate",
+        "Doctorate"
+        
+     ];
+     public Locations:any = [
+        "Mumbai",
+        "Pune",
+        "Nagpur",
+        "Nashik",
+        "Thane",
+        "Pimpri-Chinchwad",
+        "Aurangabad ",
+        "Solapur",
+        "Kalyan-Dombivali",
+        "Vasai-Virar",
+        "Palghar",
+        "Navi Mumbai", 
+        "Amravati",
+        "Mira-Bhayandar",
+        "Akola",
+        "Bhiwandi-Nizampur",
+        "Dhule",
+        "Jalgaon", 
+        "Nanded-Waghala",
+        "Kolhapur",
+        "Latur",
+        "Panvel",
+        "Ulhasnagar ",
+        "Sangli-Miraj",
+        "Malegaon",
+        "Ahmednagar",
+        "Ichalkaranji",
+        "Chandrapur",
+        "Parbhani",
+        "Ambernath"
+        
+     ];
+     public Occupations:any = [
+        "House Wife",
+        "Accountant",
+        "Marketing Professional",
+        "Sales Professional",
+        "Buisness Developer",
+        "Investment Banker",
+        "Legal Consultant",
+        "Software devloper",
+        "Auditor"
+        
+     ];
+}
