@@ -7,6 +7,10 @@
     "build": "del-cli public/js/app && webpack --config webpack.config.dev.js --progress --profile --watch",
     "build:prod": "del-cli public/js/app && ngc -p tsconfig.aot.json && ngc -p tsconfig.aot.json && webpack --config webpack.config.prod.js --progress --profile --bail && del-cli 'assets/app/**/*.js' 'assets/app/**/*.ngsummary.json' 'assets/app/**/*.ngstyle.*'"
   },
+  "engines": {
+    "node": "6.11.2",
+    "npm": "3.10.10"
+  },
   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
@@ -42,12 +46,15 @@
     "core-js": "^2.4.1",
     "rxjs": "^5.5.0",
     "zone.js": "^0.8.5",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "typescript": "2.4.2"
   },
   "devDependencies": {
     "@ngtools/webpack": "^1.8.0",
     "@types/core-js": "0.9.36",
     "@types/node": "^6.0.45",
+    "@angular/compiler": "^5.0.0",
+    "@angular/compiler-cli": "^5.0.0",
     "angular-router-loader": "^0.5.0",
     "angular2-template-loader": "^0.5.0",
     "awesome-typescript-loader": "^3.1.2",
@@ -55,7 +62,7 @@
     "html-loader": "^0.4.4",
     "raw-loader": "^0.5.1",
     "ts-loader": "^2.0.3",
-    "typescript": "^2.4.2",
+    "typescript": "2.4.2",
     "webpack": "^2.2.1",
     "webpack-merge": "^4.1.0"
   }
